@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="varaujo.com.br.jogovelha.Jogo"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="JOGO DA VELHA"
+        android:id="@+id/lblPartida"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn1"
+            android:id="@+id/btn1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn2"
+            android:id="@+id/btn2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn3"
+            android:id="@+id/btn3"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn4"
+            android:id="@+id/btn4"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn5"
+            android:id="@+id/btn5"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn6"
+            android:id="@+id/btn6"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn7"
+            android:id="@+id/btn7"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn8"
+            android:id="@+id/btn8"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tag="btn9"
+            android:id="@+id/btn9"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="setarValor"
+            android:visibility="visible" />
+    </GridLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnNewGame"
+        android:text="LIMPAR"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="clear"
+        android:singleLine="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPlayer1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="43dp"
+        android:layout_above="@+id/gridLayout"
+        android:layout_alignParentStart="true"
+        android:singleLine="false"
+        android:text="@string/lblPlayer1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblPlayer2"
+        android:id="@+id/lblPlayer2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/lblPlayer1"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOGADOR DA RODADA"
+        android:id="@+id/lblJogadorRodada"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:textColor="#010101" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNomeJogadorRodada"
+        android:layout_below="@+id/lblJogadorRodada"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="@string/lblNomeJogadorRodada" />
+
+</RelativeLayout>

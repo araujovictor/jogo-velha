@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">P1-JogoVelha</string>
+    <string name="title_activity_main">Main</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_winner_screen">Vencedor</string>
+    <string name="title_activity_jogadores">Jogadores</string>
+    <string name="title_activity_vencedores">Vencedores</string>
+    <string name="lblPlayer1"></string>
+    <string name="lblPlayer2"></string>
+    <string name="lblNomeJogadorRodada"></string>
+    <string name="txtNomeVencerdor"></string>
+    <string name="empate">EMPATE!</string>
+</resources>
